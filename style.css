@@ -888,6 +888,7 @@ section {
 
 .slider-track {
     display: flex;
+    align-items: center;
     transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -900,12 +901,13 @@ section {
 
 .matting-frame {
     background: var(--white);
-    padding: 40px;
+    padding: 30px;
     /* The "Matting" effect */
     border-radius: 8px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     position: relative;
     max-width: 100%;
+    width: fit-content;
     border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
@@ -1277,6 +1279,17 @@ section {
     .countdown-item {
         min-width: 80px;
         padding: 20px;
+    }
+
+    .matting-frame {
+        padding: 20px;
+    }
+
+    .matting-frame::before {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
     }
 
     .countdown-value {
