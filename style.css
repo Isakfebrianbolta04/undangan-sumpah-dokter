@@ -153,13 +153,14 @@ h3 {
 
 .opening-name {
     font-family: 'Allura', cursive;
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(1.5rem, 7vw, 4rem);
     font-weight: 400;
     margin-bottom: 25px;
     animation: fadeInUp 1s ease-out;
     line-height: 1.1;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
-    width: 100%;
+    white-space: nowrap;
+    width: auto;
 }
 
 .opening-degree {
@@ -370,11 +371,12 @@ h3 {
 
 .hero-title {
     font-family: 'Allura', cursive;
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(1.5rem, 7vw, 4rem);
     margin: 40px 0;
     color: var(--primary-gold);
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     line-height: 1.1;
+    white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -1337,7 +1339,7 @@ section {
 
     .opening-name,
     .hero-title {
-        font-size: clamp(1.8rem, 10vw, 3rem);
+        font-size: clamp(1rem, 8vw, 2.2rem);
     }
 
     .opening-label {
