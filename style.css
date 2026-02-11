@@ -153,7 +153,7 @@ h3 {
 
 .opening-name {
     font-family: 'Allura', cursive;
-    font-size: clamp(2.2rem, 9vw, 4.5rem);
+    font-size: clamp(1.8rem, 7.5vw, 4.5rem);
     font-weight: 500;
     margin-bottom: 15px;
     animation: fadeInUp 1s ease-out;
@@ -372,7 +372,7 @@ h3 {
 
 .hero-title {
     font-family: 'Allura', cursive;
-    font-size: clamp(2.2rem, 9vw, 4.5rem);
+    font-size: clamp(1.8rem, 7.5vw, 4.5rem);
     margin: 25px 0;
     color: var(--primary-gold);
     text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3), 0 4px 20px rgba(0, 0, 0, 0.6);
@@ -1340,7 +1340,7 @@ section {
 
     .opening-name,
     .hero-title {
-        font-size: clamp(1.4rem, 10vw, 2.8rem);
+        font-size: clamp(1.2rem, 8vw, 2.5rem);
         margin: 15px 0;
     }
 
