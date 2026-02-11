@@ -153,14 +153,13 @@ h3 {
 
 .opening-name {
     font-family: 'Allura', cursive;
-    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    font-size: clamp(2rem, 8vw, 4rem);
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     animation: fadeInUp 1s ease-out;
-    line-height: 1.2;
+    line-height: 1.3;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
-    white-space: nowrap;
-    width: auto;
+    width: 100%;
 }
 
 .opening-degree {
@@ -175,7 +174,7 @@ h3 {
     width: 60px;
     height: 2px;
     background: rgba(255, 215, 0, 0.9);
-    margin: 30px auto;
+    margin: 40px auto;
     animation: fadeInUp 1s ease-out 0.4s both;
 }
 
@@ -371,11 +370,11 @@ h3 {
 
 .hero-title {
     font-family: 'Allura', cursive;
-    font-size: clamp(2.2rem, 5.5vw, 4rem);
-    margin: 30px 0;
-    white-space: nowrap;
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin: 40px 0;
     color: var(--primary-gold);
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    line-height: 1.3;
 }
 
 .hero-subtitle {
@@ -390,7 +389,7 @@ h3 {
     width: 100px;
     height: 3px;
     background: var(--white);
-    margin: 30px auto;
+    margin: 40px auto;
     border-radius: 2px;
 }
 
@@ -1313,5 +1312,31 @@ section {
     .rsvp-form,
     .messages-container {
         padding: 25px;
+    }
+}
+
+/* Extra optimization for small mobile devices */
+@media (max-width: 480px) {
+    .opening-content {
+        padding: 15px;
+    }
+
+    .opening-name,
+    .hero-title {
+        font-size: clamp(1.8rem, 10vw, 3rem);
+    }
+
+    .opening-label {
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+
+    .opening-guest-name {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-quote {
+        font-size: 0.95rem;
     }
 }
